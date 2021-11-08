@@ -1,13 +1,18 @@
 import React from "react";
+import fishingRepo from '../../assets/repos/fishing.jpg'
+import hero from '../../assets/repos/hero-bg.jpg'
+import weather from '../../assets/repos/weather.png'
+
 
 function Repos (){
+    
     return(
         <section class="samples">
 
         <article class="sample">
             <div class="left">
                 <a href="https://github.com/abrahampre/run-buddy.git">
-                 <img src="./assets/img/hero-bg.jpg" alt="Run Buddy Webpage" class="ref-image">
+                 <img src={hero} alt="Run Buddy Webpage" className="ref-image" />
                 </a>
             </div>
             <div class="description right">
@@ -23,7 +28,7 @@ function Repos (){
             </div>
             <div class="right">
                 <a href="https://abrahampre.github.io/weather-report-using-api/">
-                    <img src="./assets/img/weather.png" alt="Weather API website screenshot" class="ref-image">
+                    <img src= {weather} alt="Weather API website screenshot" class="ref-image"/> 
                 </a>
             </div>
         </article>
@@ -31,7 +36,7 @@ function Repos (){
         <article class="sample">
             <div class="left">
                 <a href="https://boiling-hamlet-94098.herokuapp.com/">
-                    <img src="./assets/img/fishing.jpg" alt="Bait and tracker screenshot" class="ref-image">
+                <img src={fishingRepo} alt="Bait and tracker screenshot" class="ref-image"/>
                 </a>
             </div>
             <div class="description right">
